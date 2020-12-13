@@ -20,6 +20,7 @@ Living in a rural area, all ISP options routinely "hang" and require a router re
 ![alt text](https://github.com/commdogg/rpi-router-reboot/blob/main/googs-diag.jpeg?raw=true)
 
 # Additional Config
+Place script in 'pi' user home directory.  
 To Start script at boot:
 
 Edit '/etc/rc.local'
@@ -27,3 +28,9 @@ Add line to end of file
 ```bash
 sudo python3 /home/pi/googs.py &
 ```
+# Auditing
+Script will log activity to '/home/pi/googs-log.txt' Use general linux shell commands to read log, eg. for searching the log for ping faulires/resets type:
+```bash
+cat googs-log.txt | grep Resetting
+```
+This filters for "Resetting" lines and provides time stamps of each reboot. 
