@@ -16,6 +16,9 @@ Living in a rural area, all ISP options routinely "hang" and require a router re
 
 1 ISP Modem/Router (tested on AT&T DSL/Uverse and Verzion home LTE)
 
+# Diagram
+![alt text](https://github.com/commdogg/rpi-router-reboot/blob/main/googs-diag.jpeg?raw=true)
+
 # Additional Config
 To Start script at boot:
 
