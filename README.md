@@ -1,5 +1,5 @@
 # rpi-router-reboot
-A python script to check internet connectivity and reboot router upon failure.
+A python script to check internet connectivity and reboot router upon failure.  This runs on a raspberry pi. 
 Base script was found here: https://www.raspberrypi.org/forums/viewtopic.php?t=187918 
 
 # Summary
