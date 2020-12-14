@@ -43,7 +43,7 @@ while True:
   now = datetime.datetime.now()
   comma = (",")
   end = (";")
-  with open("/home/pi/googs-log.txt", "a+") as file_object:
+  with open("/home/pi/google-ping-log.txt", "a+") as file_object:
     file_object.write("\n")
     file_object.write(now.strftime("%Y-%m-%d %H:%M:%S"))
     file_object.write(comma)
@@ -57,7 +57,7 @@ while True:
   # uncomment above to print to terminal window
   # when success = 0 switch your relays.
   if success == 0:
-    with open("/home/pi/googs-log.txt", "a+") as file_object:
+    with open("/home/pi/google-ping-log.txt", "a+") as file_object:
       file_object.write("\n")
       file_object.write(now.strftime("%Y-%m-%d %H:%M:%S"))
       file_object.write(comma)
