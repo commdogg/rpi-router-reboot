@@ -29,7 +29,7 @@ Add line to end of file
 sudo python3 /home/pi/google-ping.py &
 ```
 # Auditing
-Script will log activity to '/home/pi/googs-log.txt' Use general linux shell commands to read log, eg. for searching the log for ping faulires/resets type:
+Script will log activity to '/home/pi/google-ping-log.txt' Use general linux shell commands to read log, eg. for searching the log for ping faulires/resets type:
 ```bash
 cat google-ping-log.txt | grep Resetting
 ```
