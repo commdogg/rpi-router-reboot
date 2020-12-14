@@ -26,11 +26,11 @@ To Start script at boot:
 Edit '/etc/rc.local'
 Add line to end of file 
 ```bash
-sudo python3 /home/pi/googs.py &
+sudo python3 /home/pi/google-ping.py &
 ```
 # Auditing
 Script will log activity to '/home/pi/googs-log.txt' Use general linux shell commands to read log, eg. for searching the log for ping faulires/resets type:
 ```bash
-cat googs-log.txt | grep Resetting
+cat google-ping-log.txt | grep Resetting
 ```
 This filters for "Resetting" lines and provides time stamps of each reboot. 
