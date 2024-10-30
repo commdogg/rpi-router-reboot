@@ -28,7 +28,7 @@ To Start script at boot:
 Edit '/etc/rc.local'
 Add line to end of file 
 ```bash
-sudo python3 /home/pi/pi-pinger.py &
+su pi -c ' python3 /home/pi/pi-pinger.py &'
 ```
 # Auditing
 Script will log activity to '/home/pi/google-ping-log.txt' Use general linux shell commands to read log, eg. for searching the log for ping faulires/resets type:
