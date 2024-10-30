@@ -5,6 +5,8 @@ Base script was found here: https://www.raspberrypi.org/forums/viewtopic.php?t=1
 # Summary
 Living in a rural area, all ISP options routinely "hang" and require a router reboot to restore internet access. This happens at all hours, and generally the equipment will recover fairly quickly provided it is manually reset.  Otherwise, connectivity will be down until the device is power cycled. This script checks connectivity to a google DNS server every 2 minutes, via ICMP ping.  If ping fails, it powercycles the power strip the modem is plugged into, and waits for 5 minutes. Acitivity is logged (helpful for dealing with ISP tech support).
 
+**Update** Includes additional function to test latency and trigger reset based on a threshold in milliseconds.  
+
 # Hardware 
 1 Raspberry Pi (model 3 used, but this shouldn't matter).
 
